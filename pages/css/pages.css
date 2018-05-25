@@ -1,4 +1,4 @@
-body {
+#default{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     letter-spacing: -.022em;
@@ -11,7 +11,253 @@ body {
     padding: 25px;
 }
 
-img {
+#default img{
     max-width: 100%; /* Afbeeldingen responsive maken */
 }
 
+@font-face{
+    font-family: "Raleway";
+    src: url("../font/Raleway-Regular.ttf");   
+}
+
+@font-face{
+    font-family: "Raleway Bold";
+    src: url("../font/Raleway-Bold.ttf");   
+}
+
+#styleguide{
+    background-color: black;
+    padding: 0;
+    margin: 0
+}
+
+#styleguide h1 {
+    font-family: "Raleway";
+    font-size: 3em;
+    color: white;
+}
+
+#styleguide h2 {
+    font-family: "Raleway Bold";
+    font-size: 2em;
+    color: white;
+}
+
+#styleguide h3 {}
+#styleguide h4 {}
+
+#styleguide p {
+    font-family: "Raleway";
+    font-size: 1em;
+    color: white;
+}
+
+#styleguide i {
+    color: white;
+    font-family: "Raleway";
+    font-style: italic; 
+}
+
+#styleguide section { height: 500px; }
+
+#styleguide nav {
+    z-index: 100;
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+#styleguide nav img {
+    background-color: green;
+    height: 50px;
+    float: left;
+}
+
+#styleguide nav ul {float: right;list-style: none;}
+
+#styleguide nav ul li {
+    float: left;
+}
+
+#styleguide nav a {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 1em;
+    color: #FFF;
+    padding: 10px 4px;
+    display: block;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+#styleguide nav a:hover, .active{
+    color: #00C3D7;
+    transition: 0.25s ease-in;
+}
+
+#styleguide .fixed {
+    position: fixed;
+    top: 25px;
+    width: 90%;
+} 
+
+#styleguide #container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 25px 0 0 0;
+}
+
+#styleguide #landing{ 
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    width:100%;
+    height: 75vh;
+    margin: 50px 0 50px 0; 
+}
+
+#styleguide #landing section { 
+    width: 90%;
+    margin: 100px 0 100px 0;
+}
+
+#styleguide #landing article {
+    float:left;
+    margin: 400px 0 0 100px;
+}
+
+#styleguide #landing article h1 { 
+    font-family: "Raleway Bold", Helvetica, sans-serif;
+    padding: 10px 0;
+    color: white;
+}
+
+#styleguide #logo { 
+    margin: 50px auto 300px auto;
+    text-align: center; 
+}
+
+#styleguide #logo img {
+    margin: 15vh 0 0 0;
+    width: 200px;
+}
+
+#styleguide #logo h2, #colors h2, #buttons h2, #icons h2 { 
+    width: 150px;
+    padding: 10px 0;
+    margin: 50px auto;
+    border-bottom: 2px solid #00C3D7;
+}
+
+#styleguide #logo p {
+    margin: auto;
+    width: 50%;
+    line-height: 22pt;
+}
+
+#styleguide #typography, #colors, #buttons, #icons{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 15vh;
+}
+
+#styleguide #typography #title {
+    font-family: "Raleway Bold", Helvetica, sans-serif;
+    width: 250px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    border-bottom: 2px solid #00C3D7;
+}
+
+#styleguide #typography article { padding-top: 15vh; }
+#styleguide #typography h1, #typography h2, #typography p { padding: 50px 0 10px 0; }
+
+#styleguide #typography h1 { font-family: "Raleway Bold", Hevetica, sans-serif; }
+#styleguide #typography h2 { font-family: "Raleway", Hevetica, sans-serif; }
+
+#styleguide #typography p { 
+    width: 800px;
+    margin: auto; 
+}
+
+#styleguide #typography a i{
+    font-family: "Raleway", Hevetica, sans-serif;
+    color: #00C3D7;
+    text-decoration: underline;
+}
+
+#styleguide #colors {
+    width: 100%; 
+    padding-top: 15vh;
+    text-align: center;
+}
+
+#styleguide #colors section {
+    font-family: "Raleway", Helvetica, sans-serif;
+    width: 150px;
+    height: 150px;
+    margin: 2.25vw;
+    float:left;
+    color: white;
+}
+
+#styleguide #buttons{
+}
+
+#styleguide #buttons button{
+    color: #fff;
+    display: block;
+    margin: 50px auto 0 auto;
+    padding: 10px 40px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#styleguide #buttons #b1{
+    background: #4EC0D4;
+}
+
+#styleguide #buttons #b2{
+    background: #00fffa;
+    background: -moz-linear-gradient(left, #00fffa 0%, #00596B 100%); 
+    background: -webkit-linear-gradient(left, #00fffa 0%,#00596B 100%); 
+    background: linear-gradient(to right, #00fffa 0%,#00596B 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fffa', endColorstr='#00596B',GradientType=1 ); 
+}
+
+#styleguide #buttons #b3{
+    border: 2px solid #4EC0D4;
+}
+
+#styleguide #buttons button:hover{
+    cursor: pointer;
+}
+
+#styleguide #icons{   
+}
+
+#styleguide #icons figure{
+    width: 100%;
+}
+
+#styleguide #icons figure img{
+    width: calc(20% - 100px);
+    margin: 0 50px;
+    float: left;
+}
+
+#styleguide #icons figure img:nth-child(1){
+    margin: 0 50px 0 0;
+}
+
+#styleguide #icons figure img:nth-child(5){
+    width: calc(20% - 50px);
+    margin: 20px 0  0 50px;
+}
+
+#lightblue { background-color: #4EC0D4;}
+#darkblue { background-color: #2B51A1; }
+#grey { background-color: #545D6E; }
+#deeppink { background-color: #D9A086; }
+#red { background-color: #A13E2B; }
+#black { background-color: #1C1C1B; }
